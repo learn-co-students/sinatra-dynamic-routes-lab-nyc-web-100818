@@ -29,13 +29,13 @@ get '/:operation/:number1/:number2' do
 if  params[:operation] == "add"
   @result = @num1 + @num2
   "#{@result}"
-elsif params[:operation] == "substract"
+elsif params[:operation] == "subtract"
   @result = @num1 - @num2
   "#{@result}"
 elsif params[:operation] == "multiply"
   @result = @num1 * @num2
   "#{@result}"
-else 
+else
   @result = @num1 / @num2
   "#{@result}"
 end
